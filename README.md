@@ -3,7 +3,7 @@ A library of networking tools that you can use in your Python3 project
 
 ## Functions:
 ```
-	portScan(localIP, port, threads = 10, timeout = 0.1)
+portScan(localIP, port, threads = 10, timeout = 0.1)
 ```
 A simple multi-threaded port scanner, that scans all hosts on a subnet for a specific port, returns a list, of which you need to use `parsePortScan()` to comprehend
 - `localIP`: Your machines local IP address (You can get it from `getPrivateIP()`)
@@ -12,19 +12,19 @@ A simple multi-threaded port scanner, that scans all hosts on a subnet for a spe
 - `timeout`: Timeout for giving up on response
 
 ```
-	getPrivateIP()
+getPrivateIP()
 ```
 Returns the current machines private IP address (`192.168.*.*`, `10.0.0.*` etc.)
 
 
 ```
-	getPublicIP()
+getPublicIP()
 ```
 Returns the current machines public IP address (The one you see from typing `Whats my IP` into Google)
 
 
 ```
-	isUp(IP, port, timeout = 0.1)
+isUp(IP, port, timeout = 0.1)
 ```
 Checks if the specified IP address has the specified port open, returns boolean
 - `IP`: The IP to check
@@ -33,13 +33,13 @@ Checks if the specified IP address has the specified port open, returns boolean
 
 
 ```
-	getMACAddress()
+getMACAddress()
 ```
 Returns the MAC address for the current machine
 
 
 ```
-	parsePortScan(results, localIP)
+parsePortScan(results, localIP)
 ```
 - `results`: the list that you get from `portScan()`
 - `localIP`: Your machines local IP address (You can get it from `getPrivateIP()`)
