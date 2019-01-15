@@ -46,6 +46,12 @@ def getMACAddress():
     except:
         return "00:00:00:00:00:00"
 
+def getHostName():
+    try:
+        return socket.gethostname()
+    except:
+        return ""
+
 def parsePortScan(results, localIP):
 	hostsUp = []
 	hostsDown = []
