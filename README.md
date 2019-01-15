@@ -37,6 +37,10 @@ getMACAddress()
 ```
 Returns the MAC address for the current machine
 
+```
+getHostName()
+```
+Returns the hostname for the current machine
 
 ```
 parsePortScan(results, localIP)
